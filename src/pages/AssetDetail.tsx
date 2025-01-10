@@ -74,7 +74,7 @@ export default function AssetDetail() {
     <div className="container py-8">
       <div className="flex items-center justify-between mb-8">
         <Link
-          to="/"
+          to="/#crypto"
           className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground"
         >
           <ArrowLeft className="mr-2 h-4 w-4" />

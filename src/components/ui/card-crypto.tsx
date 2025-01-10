@@ -105,7 +105,7 @@ export default function CardCrypto() {
   }
 
   return (
-    <div className="container py-8">
+    <div id="crypto" className="container py-8">
       <div className="mb-8 text-center">
         <h1 className="text-4xl font-bold text-primary">Crypto Assets</h1>
         <p className="mt-2 text-muted-foreground">
