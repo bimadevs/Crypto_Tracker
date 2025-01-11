@@ -6,9 +6,9 @@ export default function Globe() {
         <div className=" py-40 bg-black w-full">
         <div className="max-w-7xl mx-auto text-center">
           <p className="font-bold text-xl md:text-4xl dark:text-white text-black">
-            Saling{" "}
+            Blockchain sebagai{" "}
             <span className="text-neutral-400">
-              {"Terhubung".split("").map((word, idx) => (
+              {"Penghubung".split("").map((word, idx) => (
                 <motion.span
                   key={idx}
                   className="inline-block"
