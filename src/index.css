@@ -27,13 +27,55 @@
     --ring: 240 4.9% 83.9%;
     --radius: 0.75rem;
   }
- 
+
   * {
     @apply border-border;
   }
 
+  /* Gaya untuk scrollbar di browser modern (Webkit-based browsers seperti Chrome, Edge, Safari) */
+  ::-webkit-scrollbar {
+    width: 12px;
+    /* Lebar scrollbar */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0f80e9;
+    /* Warna background track scrollbar */
+    border-radius: 10px;
+    /* Membuat track menjadi lebih halus */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #4a90e2;
+    /* Warna scrollbar */
+    border-radius: 10px;
+    /* Membuat ujung scrollbar melengkung */
+    border: 3px solid #f0f0f0;
+    /* Memberikan padding antara thumb dan track */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #357ABD;
+    /* Warna scrollbar saat hover */
+  }
+
+  /* Gaya untuk Firefox */
+  * {
+    scrollbar-width: thin;
+    /* Ukuran scrollbar tipis */
+    scrollbar-color: #4a90e2 #f0f0f0;
+    /* Warna thumb dan track scrollbar */
+  }
+
+  /* Gaya untuk Internet Explorer/Edge (lama) */
+  .scrollbar {
+    -ms-overflow-style: scrollbar;
+    /* Menampilkan scrollbar standar */
+  }
+
   body {
     @apply bg-background text-foreground antialiased;
+
   }
 
   .number {
