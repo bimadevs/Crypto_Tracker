@@ -128,9 +128,9 @@ export default function CardCrypto() {
             <SelectValue placeholder="Sort by..." />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="rank">Rank</SelectItem>
-            <SelectItem value="name">Name</SelectItem>
-            <SelectItem value="priceUsd">Price</SelectItem>
+            <SelectItem value="rank">Terpopuler</SelectItem>
+            <SelectItem value="name">Nama</SelectItem>
+            <SelectItem value="priceUsd">Harga</SelectItem>
             <SelectItem value="changePercent24Hr">24h Change</SelectItem>
           </SelectContent>
         </Select>

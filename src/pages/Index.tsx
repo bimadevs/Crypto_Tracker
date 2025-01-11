@@ -2,12 +2,14 @@ import { useQuery } from "@tanstack/react-query";
 import { useState, useEffect } from "react";
 import { Asset } from "@/types";
 import { useLocation } from "react-router-dom";
+import { motion } from "motion/react";
 
 import CardCrypto from "@/components/ui/card-crypto";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import { Link } from "react-router-dom";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import { Timeline } from "@/components/ui/timeline";
+import { WorldMap } from "@/components/ui/world-map";
 
 export default function Index() {
 
@@ -110,7 +112,7 @@ export default function Index() {
       content: (
         <div>
           <p className="text-primary text-xs md:text-sm font-normal mb-8">
-          Konsep cryptocurrency diperkenalkan melalui whitepaper Bitcoin yang ditulis oleh Satoshi Nakamoto.
+            Konsep cryptocurrency diperkenalkan melalui whitepaper Bitcoin yang ditulis oleh Satoshi Nakamoto.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
@@ -136,7 +138,7 @@ export default function Index() {
       content: (
         <div>
           <p className="text-primary text-xs md:text-sm font-normal mb-8">
-          Bitcoin resmi diluncurkan, menjadi cryptocurrency pertama di dunia. Transaksi pertama dilakukan oleh Satoshi Nakamoto dan Hal Finney.
+            Bitcoin resmi diluncurkan, menjadi cryptocurrency pertama di dunia. Transaksi pertama dilakukan oleh Satoshi Nakamoto dan Hal Finney.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
@@ -162,7 +164,7 @@ export default function Index() {
       content: (
         <div>
           <p className="text-primary text-xs md:text-sm font-normal mb-8">
-          Transaksi Bitcoin pertama untuk pembelian barang terjadi ketika 10.000 BTC digunakan untuk membeli dua pizza.
+            Transaksi Bitcoin pertama untuk pembelian barang terjadi ketika 10.000 BTC digunakan untuk membeli dua pizza.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
@@ -188,7 +190,7 @@ export default function Index() {
       content: (
         <div>
           <p className="text-primary text-xs md:text-sm font-normal mb-8">
-          Altcoin pertama, Litecoin, dirilis sebagai alternatif Bitcoin dengan transaksi yang lebih cepat.
+            Altcoin pertama, Litecoin, dirilis sebagai alternatif Bitcoin dengan transaksi yang lebih cepat.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
@@ -214,7 +216,7 @@ export default function Index() {
       content: (
         <div>
           <p className="text-primary text-xs md:text-sm font-normal mb-8">
-          Bitcoin mencapai nilai $1.000 untuk pertama kalinya, menarik perhatian investor global.
+            Bitcoin mencapai nilai $1.000 untuk pertama kalinya, menarik perhatian investor global.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
@@ -240,7 +242,7 @@ export default function Index() {
       content: (
         <div>
           <p className="text-primary text-xs md:text-sm font-normal mb-8">
-          Ethereum diluncurkan, membawa inovasi melalui smart contract yang membuka peluang aplikasi blockchain di luar transaksi keuangan.
+            Ethereum diluncurkan, membawa inovasi melalui smart contract yang membuka peluang aplikasi blockchain di luar transaksi keuangan.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
@@ -266,7 +268,7 @@ export default function Index() {
       content: (
         <div>
           <p className="text-primary text-xs md:text-sm font-normal mb-8">
-          Popularitas crypto melonjak dengan Bitcoin mencapai hampir $20.000. Ini juga menjadi tahun booming untuk ICO (Initial Coin Offering).
+            Popularitas crypto melonjak dengan Bitcoin mencapai hampir $20.000. Ini juga menjadi tahun booming untuk ICO (Initial Coin Offering).
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
@@ -292,7 +294,7 @@ export default function Index() {
       content: (
         <div>
           <p className="text-primary text-xs md:text-sm font-normal mb-8">
-          Pandemi COVID-19 meningkatkan minat terhadap cryptocurrency sebagai aset digital, dengan Bitcoin mencapai nilai lebih dari $30.000 di akhir tahun.
+            Pandemi COVID-19 meningkatkan minat terhadap cryptocurrency sebagai aset digital, dengan Bitcoin mencapai nilai lebih dari $30.000 di akhir tahun.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
@@ -318,7 +320,7 @@ export default function Index() {
       content: (
         <div>
           <p className="text-primary text-xs md:text-sm font-normal mb-8">
-          Bitcoin mencatat harga tertinggi sepanjang masa di atas $60.000, sementara NFT (Non-Fungible Token) menjadi tren baru di dunia blockchain.
+            Bitcoin mencatat harga tertinggi sepanjang masa di atas $60.000, sementara NFT (Non-Fungible Token) menjadi tren baru di dunia blockchain.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
@@ -344,7 +346,7 @@ export default function Index() {
       content: (
         <div>
           <p className="text-primary text-xs md:text-sm font-normal mb-8">
-          Adopsi crypto semakin luas dengan beberapa negara mengakui Bitcoin sebagai alat pembayaran legal, serta perkembangan lebih lanjut di sektor DeFi (Decentralized Finance).
+            Adopsi crypto semakin luas dengan beberapa negara mengakui Bitcoin sebagai alat pembayaran legal, serta perkembangan lebih lanjut di sektor DeFi (Decentralized Finance).
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
@@ -365,22 +367,34 @@ export default function Index() {
         </div>
       ),
     },
-    
+
   ];
 
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center h-[40rem] ">
+      <div className="flex flex-col items-center justify-center h-[40rem]">
         <p className="text-primary  text-base  mb-10">
           Semua pertanyaan bermula dari sini
         </p>
         <TypewriterEffect words={words} />
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 mt-10">
-          <button className="w-40 h-10 rounded-xl bg-black border border-gray-300 border-transparent text-primary text-sm">
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="w-40 h-10 rounded-xl bg-black border border-gray-300 border-transparent text-primary text-sm"
+            onClick={() => {
+              const cryptoElement = document.getElementById('learn-more');
+              if (cryptoElement) {
+                cryptoElement.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
+          >
             Learn More
-          </button>
-          <button
+          </motion.button>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
             className="w-40 h-10 rounded-xl bg-white text-black border border-black  text-sm"
             onClick={() => {
               const cryptoElement = document.getElementById('crypto');
@@ -390,17 +404,86 @@ export default function Index() {
             }}
           >
             Search Crypto
-          </button>
+          </motion.button>
 
         </div>
       </div>
 
-      <div className="">
-        <StickyScroll content={content} />
-      </div>
+      <StickyScroll content={content} />
+
 
       <div className="w-full">
         <Timeline data={data} />
+      </div>
+
+      <div className=" py-40 bg-black w-full">
+        <div className="max-w-7xl mx-auto text-center">
+          <p className="font-bold text-xl md:text-4xl dark:text-white text-black">
+            Saling{" "}
+            <span className="text-neutral-400">
+              {"Terhubung".split("").map((word, idx) => (
+                <motion.span
+                  key={idx}
+                  className="inline-block"
+                  initial={{ x: -10, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 0.5, delay: idx * 0.04 }}
+                >
+                  {word}
+                </motion.span>
+              ))}
+            </span>
+          </p>
+          <p className="text-sm md:text-lg text-neutral-500 max-w-2xl mx-auto py-4">
+            Blockchain sendiri merupakan sebuah sistem komputasi yang mendasari terbentuknya aset kripto yang ada saat ini. Secara fungsi, blockchain hadir untuk blok yang saling terhubung satu sama lain yang mencatat transaksi aset dan jaringan bisnis secara online. Tidak hanya mencatat, blockchain juga mendistribusikan informasi transaksi yang terjadi di seluruh dunia kepada pemilik mata uang kripto yang ingin melihatnya. Namun informasi tersebut bersifat rahasia dan hanya memunculkan kode sebagai identitas pelaku transaksi.
+          </p>
+        </div>
+        <WorldMap
+          dots={[
+            {
+              start: {
+                lat: 64.2008,
+                lng: -149.4937,
+              }, // Alaska (Fairbanks)
+              end: {
+                lat: 34.0522,
+                lng: -118.2437,
+              }, // Los Angeles
+            },
+            {
+              start: { lat: 64.2008, lng: -149.4937 }, // Alaska (Fairbanks)
+              end: { lat: -15.7975, lng: -47.8919 }, // Brazil (Brasília)
+            },
+            {
+              start: { lat: -15.7975, lng: -47.8919 }, // Brazil (Brasília)
+              end: { lat: 38.7223, lng: -9.1393 }, // Lisbon
+            },
+            {
+              start: { lat: 38.7223, lng: -9.1393 }, // Lisbon
+              end: { lat: 51.5074, lng: -0.1278 }, // London
+            },
+            {
+              start: { lat: 51.5074, lng: -0.1278 }, // London
+              end: { lat: 28.6139, lng: 77.209 }, // New Delhi
+            },
+            {
+              start: { lat: 28.6139, lng: 77.209 }, // New Delhi
+              end: { lat: 43.1332, lng: 131.9113 }, // Vladivostok
+            },
+            {
+              start: { lat: 28.6139, lng: 77.209 }, // New Delhi
+              end: { lat: -1.2921, lng: 36.8219 }, // Nairobi
+            },
+            {
+              start: { lat: -6.1750, lng: 106.8275 }, // Jakarta
+              end: { lat: 28.6139, lng: 77.209 }, // New Delhi
+            },
+            {
+              start: { lat: 43.1332, lng: 131.9113 }, // Vladivostok
+              end: { lat: -6.1750, lng: 106.8275 }, // Jakarta
+            },
+          ]}
+        />
       </div>
 
       <CardCrypto />
