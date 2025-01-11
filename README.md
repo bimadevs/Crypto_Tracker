@@ -1,6 +1,6 @@
 # CryptoHub - Pelacak Cryptocurrency Real-Time
 
-![CryptoHub Banner](https://crypto-tracker-rho-three.vercel.app/og-image.png) <!-- Opsional: Tambahkan banner gambar untuk proyek Anda -->
+![CryptoHub Banner](https://crypto-tracker-rho-three.vercel.app/readme/BTC-overview.png) <!-- Opsional: Tambahkan banner gambar untuk proyek Anda -->
 
 CryptoHub adalah aplikasi web responsif yang dirancang untuk melacak harga cryptocurrency secara real-time. Dibangun dengan teknologi web terbaru, CryptoHub menawarkan antarmuka intuitif dan fitur-fitur canggih untuk membantu pengguna tetap terinformasi tentang dunia mata uang digital yang dinamis.
 
@@ -58,7 +58,7 @@ Untuk menjalankan CryptoHub secara lokal, ikuti langkah-langkah berikut:
 
 ![Tampilan Halaman Utama](https://crypto-tracker-rho-three.vercel.app/og-image.png) <!-- Ganti dengan tautan screenshot yang relevan -->
 
-![Crypto Overveiw](https://crypto-tracker-rho-three.vercel.app/og-image.png) <!-- Ganti dengan tautan screenshot yang relevan -->
+![Crypto Overveiw](https://crypto-tracker-rho-three.vercel.app/readme/BTC-overview.png) <!-- Ganti dengan tautan screenshot yang relevan -->
 
 
 
