@@ -1,6 +1,6 @@
 # CryptoHub - Pelacak Cryptocurrency Real-Time
 
-![CryptoHub Banner](https://your-image-link-here.com/banner.png) <!-- Opsional: Tambahkan banner gambar untuk proyek Anda -->
+![CryptoHub Banner](https://crypto-tracker-rho-three.vercel.app/og-image.png) <!-- Opsional: Tambahkan banner gambar untuk proyek Anda -->
 
 CryptoHub adalah aplikasi web responsif yang dirancang untuk melacak harga cryptocurrency secara real-time. Dibangun dengan teknologi web terbaru, CryptoHub menawarkan antarmuka intuitif dan fitur-fitur canggih untuk membantu pengguna tetap terinformasi tentang dunia mata uang digital yang dinamis.
 
@@ -18,7 +18,7 @@ CryptoHub adalah aplikasi web responsif yang dirancang untuk melacak harga crypt
 - **Radix UI:** Komponen aksesibilitas yang elegan dan dapat disesuaikan.
 - **Tailwind CSS:** Framework CSS yang mempermudah styling dengan utility-first classes.
 - **Framer Motion:** Animasi halus dan interaktif untuk meningkatkan pengalaman pengguna.
-- **Crypto API:** API yang terintegrasi untuk mendapatkan data cryptocurrency secara real-time.
+- **CoinCap:** API yang terintegrasi untuk mendapatkan data cryptocurrency secara real-time.
 
 ## Instalasi
 
@@ -27,13 +27,13 @@ Untuk menjalankan CryptoHub secara lokal, ikuti langkah-langkah berikut:
 1. Clone repository:
 
    ```bash
-   git clone https://github.com/bimadevs/crypto-tracker.git
+   git clone https://github.com/bimadevs/Crypto_Tracker.git
    ```
 
 2. Masuk ke direktori proyek:
 
    ```bash
-   cd crypto-tracker
+   cd Crypto_Tracker
    ```
 
 3. Instal dependensi:
@@ -56,9 +56,9 @@ Untuk menjalankan CryptoHub secara lokal, ikuti langkah-langkah berikut:
 
 ## Screenshot
 
-![Tampilan Halaman Utama](https://your-image-link-here.com/homepage.png) <!-- Ganti dengan tautan screenshot yang relevan -->
+![Tampilan Halaman Utama](https://crypto-tracker-rho-three.vercel.app/og-image.png) <!-- Ganti dengan tautan screenshot yang relevan -->
 
-![Fitur Pencarian](https://your-image-link-here.com/search.png) <!-- Ganti dengan tautan screenshot yang relevan -->
+![Crypto Overveiw](https://crypto-tracker-rho-three.vercel.app/og-image.png) <!-- Ganti dengan tautan screenshot yang relevan -->
 
 
 
@@ -72,7 +72,7 @@ Proyek ini dilisensikan di bawah [MIT License](LICENSE).
 
 ## Acknowledgments
 
-- [Crypto API](https://www.coingecko.com/en/api) untuk data cryptocurrency real-time.
+- [Crypto API](https://api.coincap.io) untuk data cryptocurrency real-time.
 - [Next.js](https://nextjs.org/), [React](https://reactjs.org/), [Radix UI](https://www.radix-ui.com/), [Tailwind CSS](https://tailwindcss.com/), dan [Framer Motion](https://www.framer.com/motion/) untuk mendukung pengembangan aplikasi.
 - Terima kasih kepada komunitas open-source atas inspirasi dan panduannya.
 
@@ -80,7 +80,7 @@ Proyek ini dilisensikan di bawah [MIT License](LICENSE).
 
 Jika Anda menyukai proyek ini, jangan lupa untuk memberikan ⭐ pada repository ini dan bagikan dengan teman-teman Anda!
 
-[![GitHub Stars](https://img.shields.io/github/stars/bimadevs/crypto-tracker?style=social)](https://github.com/bimadevs/crypto-tracker/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/bimadevs/Crypto_Tracker?style=social)](https://github.com/bimadevs/Crypto_Tracker/stargazers)
 
 ---
 
